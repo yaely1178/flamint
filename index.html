@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -44,7 +44,10 @@
       padding: 10px 24px;
       border-radius: 8px;
       font-weight: bold;
+      transition: opacity 0.2s;
     }
+    .btn:hover { opacity: 0.9; }
+
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -53,6 +56,7 @@
       flex-direction: column;
       gap: 50px;
     }
+
     .hero-banner {
       text-align: center;
     }
@@ -77,6 +81,7 @@
       font-size: 1.15rem;
       margin-bottom: 24px;
     }
+
     .image-card {
       background: var(--card-bg);
       border-radius: 16px;
@@ -91,6 +96,7 @@
       border-radius: 12px;
       display: block;
     }
+
     .cta-box {
       text-align: center;
       background: linear-gradient(180deg, var(--card-bg) 0%, #0d1522 100%);
@@ -106,6 +112,15 @@
       color: var(--muted);
       margin-bottom: 24px;
     }
+    .email-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--primary);
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -119,35 +134,40 @@
 
   <header>
     <div class="logo">FLA<span>MINT</span></div>
-    <a href="#contact" class="btn">הזמנות</a>
+    <a href="#contact" class="btn">Contact Us</a>
   </header>
 
   <main class="container">
     <div class="hero-banner">
-      <span class="badge">פטנט רשום ובלעדי</span>
+      <span class="badge">Patented & Exclusive</span>
       <h1>Same Moment, Fresher You.</h1>
-      <p class="lead">שילוב מהפכני 2 ב-1: מצית איכותי ועמיד לצד ספריי מנטה מרענן לנשימה במוצר אחד שמתאים לכל כיס.</p>
+      <p class="lead">Revolutionary 2-in-1 design: A standard reliable lighter combined with an integrated fresh mint breath spray.</p>
     </div>
 
-    <!-- תמונת מפרט המוצר -->
+    <!-- Product Features Banner -->
     <div class="image-card">
       <img src="meet-product.jpg.jpeg" alt="Meet Flamint - 2 in 1 Lighter and Breath Spray">
     </div>
 
-    <!-- תמונת סקירת המוצר והשימוש -->
+    <!-- Product Experience Presentation -->
     <div class="image-card">
       <img src="landing-overview.jpg.jpeg" alt="Flamint Product Presentation">
     </div>
 
+    <!-- Contact & Orders Section -->
     <div class="cta-box" id="contact">
-      <h2>מעוניינים בפרטים נוספים או בהזמנת מלאי לחנויות?</h2>
-      <p>מעמד קופה ייעודי של 50 יחידות זמין כעת להזמנה מיידית.</p>
-      <a href="mailto:info@flamint.com" class="btn" style="font-size: 1.1rem; padding: 14px 32px;">צרו איתנו קשר</a>
+      <h2>Interested in Retail Orders or Partnerships?</h2>
+      <p>50-unit retail counter display boxes are ready for dispatch. Contact us directly to place your order:</p>
+      
+      <!-- החליפי את your-email@gmail.com בכתובת המייל האמיתית שלך -->
+      <a href="mailto:your-email@gmail.com?subject=Flamint%20Inquiry" class="btn" style="font-size: 1.1rem; padding: 14px 32px;">Send Email</a>
+      <br>
+      <a href="mailto:your-email@gmail.com" class="email-link">your-email@gmail.com</a>
     </div>
   </main>
 
   <footer>
-    &copy; 2026 Flamint. כל הזכויות שמורות.
+    &copy; 2026 Flamint. All rights reserved.
   </footer>
 
 </body>
