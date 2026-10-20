@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamint - 2 in 1 Lighter + Breath Spray</title>
+  <style>
+    :root {
+      --primary: #ff5722;
+      --bg: #090e17;
+      --card-bg: #111a29;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(9, 14, 23, 0.95);
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    .logo span { color: var(--primary); }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .hero-banner {
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 87, 34, 0.15);
+      color: var(--primary);
+      border: 1px solid rgba(255, 87, 34, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 12px;
+      font-weight: 900;
+    }
+    p.lead {
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin-bottom: 24px;
+    }
+    .image-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .image-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+    .cta-box {
+      text-align: center;
+      background: linear-gradient(180deg, var(--card-bg) 0%, #0d1522 100%);
+      padding: 40px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 87, 34, 0.3);
+    }
+    .cta-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .cta-box p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">FLA<span>MINT</span></div>
+    <a href="#contact" class="btn">הזמנות</a>
+  </header>
+
+  <main class="container">
+    <div class="hero-banner">
+      <span class="badge">פטנט רשום ובלעדי</span>
+      <h1>Same Moment, Fresher You.</h1>
+      <p class="lead">שילוב מהפכני 2 ב-1: מצית איכותי ועמיד לצד ספריי מנטה מרענן לנשימה במוצר אחד שמתאים לכל כיס.</p>
+    </div>
+
+    <!-- תמונת מפרט המוצר -->
+    <div class="image-card">
+      <img src="meet-product.jpg.jpeg" alt="Meet Flamint - 2 in 1 Lighter and Breath Spray">
+    </div>
+
+    <!-- תמונת סקירת המוצר והשימוש -->
+    <div class="image-card">
+      <img src="landing-overview.jpg.jpeg" alt="Flamint Product Presentation">
+    </div>
+
+    <div class="cta-box" id="contact">
+      <h2>מעוניינים בפרטים נוספים או בהזמנת מלאי לחנויות?</h2>
+      <p>מעמד קופה ייעודי של 50 יחידות זמין כעת להזמנה מיידית.</p>
+      <a href="mailto:info@flamint.com" class="btn" style="font-size: 1.1rem; padding: 14px 32px;">צרו איתנו קשר</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Flamint. כל הזכויות שמורות.
+  </footer>
+
+</body>
+</html>
